@@ -74,33 +74,32 @@ const SkillCard = ({ title, icon, color, skills }) => {
 const Skills = () => {
     const skillData = {
         languages: [
-            { name: "TypeScript", level: 3, descriptions: ["타입 시스템을 이해하고 안정적인 코드 작성 가능"] },
-            { name: "JavaScript", level: 3, descriptions: ["ES6+ 문법 활용, 비동기 처리 이해"] },
-            { name: "Python", level: 3, descriptions: ["FastAPI, Django 백엔드 개발 경험"] },
             { name: "Java", level: 2, descriptions: ["Spring Boot 기반 API 개발 경험"] },
+            { name: "Python", level: 3, descriptions: ["FastAPI, Django 기반 API 개발 경험"] },
+            { name: "SQL", level: 2, descriptions: ["MySQL 기반 데이터 조회/가공 및 스키마 이해"] },
+            { name: "JavaScript / TypeScript", level: 2, descriptions: ["서비스 연동을 위한 비동기 처리 및 타입 시스템 이해"] },
         ],
         frameworks: [
-            { name: "React", level: 3, descriptions: ["Hooks, Context API, 상태관리 라이브러리 활용", "TypeScript와 함께 사용하여 프로젝트 진행"] },
-            { name: "Vue.js", level: 3, descriptions: ["Vue 3 Composition API 활용", "Pinia 상태관리, Vue Router 라우팅"] },
-            { name: "Spring Boot", level: 2, descriptions: ["REST API 개발 경험"] },
-            { name: "FastAPI", level: 2, descriptions: ["Python 기반 API 서버 개발"] },
+            { name: "Spring Boot", level: 2, descriptions: ["REST API 설계/구현", "프로젝트에서 Spring Security 사용 경험"] },
+            { name: "FastAPI", level: 3, descriptions: ["Python 기반 API 서버 개발", "MSA 환경에서 서비스 분리 경험"] },
+            { name: "Django / DRF", level: 2, descriptions: ["CRUD API 개발", "Django Channels로 실시간 통신 경험"] },
+            { name: "LangChain", level: 2, descriptions: ["RAG 파이프라인 구성 및 LLM 연동 경험"] },
         ],
-        tools: [
-            { name: "Git / GitLab", level: 3, descriptions: ["브랜치 전략, PR 기반 협업 경험"] },
-            { name: "Vite", level: 3, descriptions: ["프로젝트 빌드 도구로 활용"] },
-            { name: "Docker", level: 2, descriptions: ["컨테이너 기반 개발 환경 구성"] },
-            { name: "Figma", level: 2, descriptions: ["UI 디자인 협업 및 로고 제작"] },
+        data: [
+            { name: "MySQL", level: 3, descriptions: ["관계형 데이터 모델링 및 연동 경험"] },
+            { name: "MongoDB", level: 2, descriptions: ["문서형 데이터 모델링 및 연동 경험"] },
+            { name: "Redis", level: 2, descriptions: ["캐시/세션 등 인메모리 저장소 활용 경험"] },
         ],
-        frontend: [
-            { name: "GSAP", level: 3, descriptions: ["스크롤 애니메이션, 인터랙티브 UI 구현"] },
-            { name: "Framer Motion", level: 2, descriptions: ["React 애니메이션 라이브러리 활용"] },
-            { name: "TailwindCSS", level: 3, descriptions: ["유틸리티 기반 스타일링"] },
-            { name: "Playwright", level: 2, descriptions: ["E2E 테스트 환경 구축 및 테스트 작성"] },
+        infra: [
+            { name: "Git / GitLab", level: 3, descriptions: ["브랜치 전략, PR/MR 기반 협업 경험"] },
+            { name: "Docker / Compose", level: 2, descriptions: ["컨테이너 기반 개발/배포 환경 구성 경험"] },
+            { name: "AWS", level: 1, descriptions: ["클라우드 환경에서 서비스 운영 경험"] },
         ],
-        state: [
-            { name: "Zustand", level: 3, descriptions: ["경량 상태관리 라이브러리 활용"] },
-            { name: "Pinia", level: 3, descriptions: ["Vue.js 공식 상태관리 라이브러리"] },
-            { name: "TanStack Query", level: 2, descriptions: ["서버 상태 관리 및 데이터 캐싱"] },
+        architecture: [
+            { name: "REST API", level: 3, descriptions: ["엔드포인트/상태코드/에러 스펙을 일관되게 설계"] },
+            { name: "MSA", level: 2, descriptions: ["FastAPI + Spring Boot 기반 서비스 분리 및 연동 경험"] },
+            { name: "Async / Realtime", level: 2, descriptions: ["WebSocket 기반 실시간 기능 구현 경험"] },
+            { name: "Testing", level: 2, descriptions: ["E2E 테스트(Playwright) 환경 구축 및 테스트 작성 경험"] },
         ]
     };
 
@@ -154,10 +153,10 @@ const Skills = () => {
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
                         <SkillCard
-                            title="Frontend Tools"
-                            icon="🎨"
+                            title="Database & Cache"
+                            icon="🗄️"
                             color="pink"
-                            skills={skillData.frontend}
+                            skills={skillData.data}
                         />
                     </motion.div>
                 </div>
@@ -170,10 +169,10 @@ const Skills = () => {
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
                         <SkillCard
-                            title="DevOps & Tools"
+                            title="Infra & DevOps"
                             icon="⚙️"
                             color="orange"
-                            skills={skillData.tools}
+                            skills={skillData.infra}
                         />
                     </motion.div>
 
@@ -183,10 +182,10 @@ const Skills = () => {
                         transition={{ duration: 0.6, delay: 0.5 }}
                     >
                         <SkillCard
-                            title="State Management"
-                            icon="🗄️"
+                            title="Architecture"
+                            icon="🧩"
                             color="purple"
-                            skills={skillData.state}
+                            skills={skillData.architecture}
                         />
                     </motion.div>
                 </div>

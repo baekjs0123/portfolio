@@ -21,7 +21,7 @@ const Layout = () => {
             <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 print:hidden">
                 <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
                     <Link to="/" className="text-xl font-bold text-blue-600">
-                        Portfolio<span className="text-gray-900">.</span>
+                        Backend<span className="text-gray-900">Portfolio.</span>
                     </Link>
 
                     {/* Desktop Navigation */}

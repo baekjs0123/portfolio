@@ -15,15 +15,15 @@ const Home = () => {
                         className="flex-1 text-center lg:text-left"
                     >
                         <div className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-6">
-                            Frontend Developer
+                            Backend Developer
                         </div>
                         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-4">
                             안녕하세요,<br />
                             <span className="text-blue-600">백종석</span>입니다.
                         </h1>
                         <p className="mt-4 max-w-xl text-lg text-gray-600 word-keep-all leading-relaxed">
-                            React, Vue, TypeScript를 활용하여 사용자 중심의 인터랙티브한 웹 애플리케이션을 개발합니다.
-                            새로운 기술에 대한 호기심과 지속적인 성장을 추구하는 개발자입니다.
+                            FastAPI를 중심으로 확장성과 유지보수성을 고려하여 API와 백엔드 서비스를 개발합니다.
+                            협업을 중요시하며, 프론트엔드 경험을 바탕으로 프론트의 고충을 이해하고 함께 해결하는 개발자입니다.
                         </p>
 
                         <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
@@ -107,7 +107,7 @@ const Home = () => {
                                     <span className="text-2xl">💻</span>
                                     <div>
                                         <p className="text-xs text-gray-500">Main Stack</p>
-                                        <p className="text-sm font-bold text-gray-900">React / Vue</p>
+                                        <p className="text-sm font-bold text-gray-900">Django / FastAPI</p>
                                     </div>
                                 </div>
                             </motion.div>

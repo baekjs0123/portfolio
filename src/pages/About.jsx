@@ -16,7 +16,7 @@ const About = () => {
                         <div>
                             <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
                                 안녕하세요,<br />
-                                <span className="text-blue-600">프론트엔드</span> 개발자 백종석입니다.
+                                <span className="text-blue-600">백엔드</span> 개발자 백종석입니다.
                             </h1>
                         </div>
 
@@ -31,10 +31,10 @@ const About = () => {
                         <div className="space-y-5 text-gray-700">
                             <div>
                                 <h3 className="text-lg font-bold text-gray-900 mb-1">
-                                    <span className="text-blue-600">사용자 경험</span>을 중요하게 생각합니다.
+                                    <span className="text-blue-600">안정성과 확장성</span>을 우선합니다.
                                 </h3>
                                 <p className="leading-relaxed text-gray-600 text-sm word-keep-all">
-                                    단순한 기능 구현을 넘어 사용자가 편리하고 직관적으로 서비스를 이용할 수 있도록 UI/UX를 고민합니다. 애니메이션과 인터랙션을 통해 더 나은 사용자 경험을 제공하는 것을 목표로 합니다.
+                                    트래픽과 데이터가 늘어도 흔들리지 않도록 아키텍처를 고민하고, API 설계·데이터 모델링·캐시 등 백엔드 핵심 요소를 기반으로 문제를 해결합니다.
                                 </p>
                             </div>
 
@@ -43,7 +43,7 @@ const About = () => {
                                     <span className="text-blue-600">팀 협업</span>을 중요하게 생각합니다.
                                 </h3>
                                 <p className="leading-relaxed text-gray-600 text-sm word-keep-all">
-                                    PM 경험을 통해 일정 관리와 팀 커뮤니케이션의 중요성을 배웠습니다. 효율적인 협업과 명확한 소통을 통해 프로젝트의 성공에 기여합니다.
+                                    PM 경험을 통해 일정 관리와 커뮤니케이션의 중요성을 배웠습니다. API 스펙 합의, 이슈 트래킹, 코드 리뷰 등 명확한 소통으로 협업 효율을 높입니다.
                                 </p>
                             </div>
 
@@ -52,7 +52,7 @@ const About = () => {
                                     <span className="text-blue-600">지속적인 학습</span>을 추구합니다.
                                 </h3>
                                 <p className="leading-relaxed text-gray-600 text-sm word-keep-all">
-                                    새로운 프레임워크와 라이브러리에 대한 호기심을 가지고 꾸준히 학습합니다. SSAFY에서의 다양한 프로젝트 경험을 통해 빠르게 기술을 습득하고 적용하는 능력을 키웠습니다.
+                                    다양한 프로젝트를 통해 빠르게 기술을 습득하고 적용해왔습니다. 특히 데이터 처리, 서비스 분리(MSA), 배포 자동화 등 운영 관점까지 학습하며 성장하고 있습니다.
                                 </p>
                             </div>
                         </div>
@@ -85,14 +85,14 @@ const About = () => {
                                 <span className="text-xl mr-2">💼</span>
                                 <h2 className="text-xl font-bold text-gray-900">Project Experience</h2>
                             </div>
-                            <ul className="space-y-3 text-sm">
-                                <li className="flex gap-3">
-                                    <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2025.10 ~ 2025.11</span>
-                                    <div className="flex flex-col gap-1">
-                                        <span className="text-gray-600 word-keep-all font-medium">HEBEES - RAG 기반 지능형 문서 검색 플랫폼</span>
-                                        <span className="text-gray-500 text-xs">Backend & AI 개발</span>
-                                    </div>
-                                </li>
+	                            <ul className="space-y-3 text-sm">
+	                                <li className="flex gap-3">
+	                                    <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2025.10 ~ 2025.11</span>
+	                                    <div className="flex flex-col gap-1">
+	                                        <span className="text-gray-600 word-keep-all font-medium">RAG익스텐션 - RAG 기반 지능형 문서 검색 및 답변 생성 플랫폼</span>
+	                                        <span className="text-gray-500 text-xs">Backend & AI 개발</span>
+	                                    </div>
+	                                </li>
                                 <li className="flex gap-3">
                                     <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2025.08 ~ 2025.09</span>
                                     <div className="flex flex-col gap-1">
@@ -116,29 +116,29 @@ const About = () => {
                                 <span className="text-xl mr-2">🎯</span>
                                 <h2 className="text-xl font-bold text-gray-900">Key Roles</h2>
                             </div>
-                            <ul className="space-y-2 text-sm">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-blue-600">•</span>
-                                    <span className="text-gray-600 word-keep-all">PM(프로젝트 매니저) 경험으로 일정 관리 및 팀 리딩</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-blue-600">•</span>
-                                    <span className="text-gray-600 word-keep-all">Vue.js, React를 활용한 프론트엔드 개발</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-blue-600">•</span>
-                                    <span className="text-gray-600 word-keep-all">GSAP, Framer Motion을 활용한 애니메이션 구현</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-blue-600">•</span>
-                                    <span className="text-gray-600 word-keep-all">Playwright를 활용한 E2E 테스트 환경 구축</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-blue-600">•</span>
-                                    <span className="text-gray-600 word-keep-all">PWA 구현으로 모바일 웹앱 최적화</span>
-                                </li>
-                            </ul>
-                        </div>
+	                            <ul className="space-y-2 text-sm">
+	                                <li className="flex items-start gap-2">
+	                                    <span className="text-blue-600">•</span>
+	                                    <span className="text-gray-600 word-keep-all">PM(프로젝트 매니저) 경험으로 일정 관리 및 팀 리딩</span>
+	                                </li>
+	                                <li className="flex items-start gap-2">
+	                                    <span className="text-blue-600">•</span>
+	                                    <span className="text-gray-600 word-keep-all">Spring Boot, FastAPI 기반 REST API 설계 및 개발</span>
+	                                </li>
+	                                <li className="flex items-start gap-2">
+	                                    <span className="text-blue-600">•</span>
+	                                    <span className="text-gray-600 word-keep-all">MySQL, MongoDB, Redis, Vector DB(Milvus) 등 데이터 계층 연동</span>
+	                                </li>
+	                                <li className="flex items-start gap-2">
+	                                    <span className="text-blue-600">•</span>
+	                                    <span className="text-gray-600 word-keep-all">Docker, Nginx, Jenkins 기반 배포/운영 환경 구성 경험</span>
+	                                </li>
+	                                <li className="flex items-start gap-2">
+	                                    <span className="text-blue-600">•</span>
+	                                    <span className="text-gray-600 word-keep-all">MSA 환경에서 서비스 분리 및 연동(FastAPI + Spring Boot)</span>
+	                                </li>
+	                            </ul>
+	                        </div>
 
                         {/* Contact */}
                         <div>
